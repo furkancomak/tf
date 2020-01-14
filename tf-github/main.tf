@@ -1,9 +1,9 @@
 provider "github" {
 	organization = "TerrPrac"
-	token = "5ae763202fb23d1a546df257b461a11230e3122f"
+	token = "token"
 }
 module "Team-Manage" {
-	source = "/Users/furkancomak/Projects/tf-github/Teams"
+	source = "/Users/furkancomak/Projects/tf/tf-github/Teams"
 	team_name = "teamname"
 	users-org = [
 		{
@@ -16,7 +16,7 @@ module "Team-Manage" {
 	]
 }
 module "Repository-Builder" {
-	source = "/Users/furkancomak/Projects/tf-github/Repository"
+	source = "/Users/furkancomak/Projects/tf/tf-github/Repository"
 	name = "Repo_deneme"
 	description = "Bu bir deneme reposudur"
 	private = false
